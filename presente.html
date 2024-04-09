@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Visitante 1.000</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+  <div style="width:100%; padding: 10px 0;background: orange;margin: 0;"></div>
+  <div style="text-align: center;margin-top: 20px;">
+  <img style="width:250px;" src="logo.png">
+  </div>
+
+  <div class="div-principal" style="width:100%;text-align: center;max-width: 800px;margin: auto;">
+    <h1 style="font-size: 35px;color: #3298ff;font-family: 'Exo 2', Sans-serif;
+    font-weight: 600;margin: 20px 0px;">Presente 724Game!</h1>
+    <p style="font-size: 25px;font-family: 'Exo 2', Sans-serif;font-weight: 600;padding: 10px 20px;color: #fff;">Nesse mês de aniversário estamos presenteando algumas pessoas. Então antes de fazer o seu cadastro, gire a roleta e veja qual prêmio te aguarda.</p>
+    <p style="font-size:25px;margin-top:35px;margin-bottom:15px;font-family: 'Exo 2', Sans-serif;color: #fff;">Boa Sorte!</p>
+    <div class="roulette">
+      <div class="spinner"></div>
+      <div class="shadow"></div>
+      <div class="markers">
+        <div class="triangle"></div>
+      </div>
+      <div class="button">
+        <span class="span-girar" onclick="spinner.spin(3),setTimeout(setTimeoutFunction, 6000)">GIRAR</span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="div-final" style="display: none;position: fixed;margin: auto;background-image: linear-gradient(45deg, black, #00c518);top: 30%;left:0;right:0;z-index: 100000;text-align: center;margin: auto;border-radius: 20px;max-width: 500px;padding: 15px;">
+
+    <h1 style="font-size: 35px;color: #fff;font-family: 'Exo 2', Sans-serif;
+    margin: 20px 0px;">PARABÉNS!<br><br>Você Ganhou <b>Meia Ваnса nо Ріх.</b></h1>
+
+    <p style="font-size: 25px;color: #fff;font-family: 'Exo 2', Sans-serif;
+    margin: 20px 0px;padding: 0 20px;">Deposite uma banca de R$10 e receba R$5 no PIX. Clique no botão abaixo e solicite agora!</p>
+
+    <div style="margin-bottom:10px" id="cta1" class="esconder mt-4">
+      <a href="https://api.whatsapp.com/send?phone=558288302404&text=Ol%C3%A1,%20Ganhei%20meia%20banca%20de%20volta%20no%20Pix,%20gostaria%20de%20solicitar." class="a-btn" style="text-decoration: none;">
+        <span class="span-btn">SOLICITAR PIX!</span>
+      </a>
+    </div>
+
+    <style type="text/css">
+          .a-btn {
+          text-decoration: none;
+          -webkit-font-smoothing: antialiased;
+          margin: 0;
+          border: 0; 
+          font: inherit; 
+          vertical-align: baseline;
+          color: #2e82bc; 
+          outline: 0; 
+          line-height: 1; 
+          text-align: center; 
+          position:relative!important; display: inline-block!important;
+          border-style: solid; 
+          width: 100%; padding-left: 0!important; padding-right: 0!important; 
+          margin-bottom: 10px; 
+          padding: 22px 44px; border-color: #ff5535; border-width: 0px; 
+          border-radius: 6px; 
+          background: linear-gradient(to bottom, #00ff08 0%, #095600 100%);
+          box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.5); 
+          text-decoration: none!important;
+          cursor: pointer;
+           animation: pulse 1.5s infinite alternate;
+          animation-name: pulse;
+          -webkit-animation-name: pulse;
+          animation-duration: 1.5s;
+          -webkit-animation-duration: 1.5s;
+          animation-iteration-count: infinite;
+          -webkit-animation-iteration-count: infinite;
+          text-decoration: none;
+        }
+        @keyframes pulse{
+          0%,100%{transform:scale(.9);opacity:.9;}
+          50%{transform:scale(1);opacity:1;}
+          }
+          @-webkit-keyframes pulse{
+          0%,100%{-webkit-transform:scale(.95);opacity:.7}
+          50%{-webkit-transform:scale(1);opacity:1}
+        }
+        .a-btn:hover {
+            background: #00ff08;
+            color: #fff;
+            border-radius: 5px;
+            /*box-shadow: 0 0 5px #00ff08b3, 0 0 25px #00ff08b3, 0 0 50px #00ff08b3, 0 0 100px #00ff08b3;*/
+        }
+        .span-btn {
+          text-decoration: none;
+          -webkit-font-smoothing: antialiased; 
+          text-align: center;
+          margin: 0; 
+          border: 0; 
+          font: inherit;
+          vertical-align: baseline;
+          display: block; 
+          position: relative; 
+          z-index: 1; 
+          padding: 0 15px; 
+          white-space: normal; 
+          font-size: 20px;
+          color: #ffffff; 
+          font-family: 'Exo 2', Sans-serif;
+          font-weight: bold; 
+          text-shadow: #000000 0px 1px 0px;
+          text-decoration: none;
+        }
+        </style>
+
+
+  </div>
+
+
+  <!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js'></script>
+  <script  src="./script.js"></script>
+
+  <script type="text/javascript">
+
+  function setTimeoutFunction() {
+    // Altera a opacidade da classe div-principal para 0.2
+    document.querySelector('.div-principal').style.opacity = '0.2';
+    
+    // Mostra a classe div-final
+    document.querySelector('.div-final').style.display = 'block';
+    
+    // Oculta a classe span-girar
+    document.querySelector('.span-girar').style.display = 'none';
+
+    cronometro();
+
+  }
+
+  </script>
+
+  <script type="text/javascript">
+
+  function cronometro() {
+    var contador = 3;
+    var elementoCronometro = document.querySelector('.cronometro');
+
+    var intervalo = setInterval(function() {
+      elementoCronometro.textContent = contador ;
+      contador--;
+
+      if (contador < 0) {
+        clearInterval(intervalo); // Para o cronômetro após 3 segundos
+      }
+    }, 1000); // Executa a cada segundo
+  }
+
+  </script>
+
+</body>
+</html>
