@@ -192,37 +192,7 @@ $(window).ready(function(){
   });
 })
 
-var spinner;
 
-$(window).ready(function(){
-  spinner = new RouletteWheel($('.roulette'), data);
-  spinner.render();
-  
-  spinner.on('spin:start', function(r){ console.log('spin start!') });
-  spinner.on('spin:end', function(r){ 
-    console.log('spin end! -->'+ r._index);
-  });
-
-  // Função para verificar se o usuário já girou a roleta antes e exibir o alerta se necessário
-  function verificarGiroAnterior() {
-    // Verifica se o usuário já girou a roleta antes
-    var hasSpunBefore = localStorage.getItem('hasSpun');
-    if (hasSpunBefore) {
-      alert('Você já girou a roleta uma vez, o resultado será o mesmo. Aproveite seu prêmio.');
-    } else {
-      // Define a flag indicando que o usuário girou a roleta
-      localStorage.setItem('hasSpun', true);
-    }
-  }
-
-  // Associando a verificação ao clique do botão
-  $('.button').on('click', function() {
-    // Executa a verificação antes de girar a roleta
-    verificarGiroAnterior();
-    // Gira a roleta
-    spinner.spin();
-  });
-});
 
 
 
