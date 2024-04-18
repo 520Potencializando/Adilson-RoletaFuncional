@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Conta de Artistas</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body {
+			background: #383838;
+			font-family: 'Exo 2', Sans-serif;
+			color: #fff;
+		}
+
+		img {
+			display: inline-block;
+			width: 45%;
+			border-radius: 20px;
+		}
+
+		.coluna {
+			width: 100%;
+			margin: auto;
+		}
+
+		a {
+			cursor: pointer;
+		}
+
+		img:hover {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<div style="max-width: 500px; margin: auto; text-align: center;">
+		<h1>Selecione um artista para ativar sua conta VIP</h1>
+		<p>As contas de artistas são <b>LIMITADAS</b>, depois que acabarem não adianta mais chamar nossa equipe no suporte do whatsapp</p>
+		<div class="coluna">
+			<a onclick="redirect()"><img src="carlinhos.png"></a>
+			<a onclick="redirect()"><img src="rian.png"></a>
+		</div>
+		<div class="coluna">
+			<a onclick="redirect()"><img src="virginia.png"></a>
+			<a onclick="redirect()"><img src="buzeira.png"></a>
+		</div>
+		<div class="coluna">
+			<a onclick="redirect()"><img src="zefelipe.png"></a>
+			<a onclick="redirect()"><img src="cremosinho.png"></a>
+		</div>
+		<div class="coluna">
+			<a onclick="redirect()"><img src="mirella.png"></a>
+			<a onclick="redirect()"><img src="toguro.png"></a>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+	function redirect() {
+	    window.location.href = "pagina/index.html";
+	}
+	</script>
+</body>
+</html>
